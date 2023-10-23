@@ -7,12 +7,12 @@ public class Pizza {
     private String bill;
 
     //cheese to be added first
-    private boolean cheeseAdded = false;
-    private int totalCheese = 0;
+    private boolean cheeseAdded;
+    private int totalCheese ;
 
     //topping to be added later
-    private boolean toppingAdded = false;
-    private int totalToppings = 0;
+    private boolean toppingAdded;
+    private int totalToppings;
 
     private boolean bagAdded = false;
 
@@ -21,6 +21,16 @@ public class Pizza {
         // your code goes here
         if(this.isVeg) price = 300;
         else price = 400;
+
+        cheeseAdded = false;
+        totalCheese = 0;
+
+        //topping to be added later
+        toppingAdded = false;
+        totalToppings = 0;
+
+        bagAdded = false;
+
     }
 
     public int getPrice(){
