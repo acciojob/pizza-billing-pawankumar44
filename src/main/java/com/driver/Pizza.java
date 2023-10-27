@@ -80,7 +80,7 @@ public class Pizza {
         bill+= "Base Price Of The Pizza: "+this.price+"\n";
         if(this.cheeseAdded) bill+= "Extra Cheese Added: "+this.totalCheese+"\n";
         if(this.toppingAdded) bill+= "Extra Toppings Added: "+this.totalToppings+"\n";
-        if(this.bagAdded) bill+= "Paper bag Added: 20\n";
+        if(this.bagAdded) bill+= "Paperbag Added: 20\n";
         bill+="Total Price: "+this.totalprice+"\n";
 //        bill+="Total Price: "+
 //                (this.price+this.totalCheese+this.totalToppings+
