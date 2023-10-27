@@ -61,8 +61,8 @@ public class Pizza {
         if(!this.toppingAdded){
             this.toppingAdded = true;
 //        this.price+= this.isVeg ? 70 : 120;
-            this.totalToppings = this.isVeg ? 70 : 120;
-            this.totalprice = this.isVeg ? 70 : 120;
+            this.totalToppings+= this.isVeg ? 70 : 120;
+            this.totalprice+= this.isVeg ? 70 : 120;
         }
 
     }
