@@ -47,9 +47,12 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        this.cheeseAdded = true;
-        this.totalCheese+=80;
-        this.totalprice+=80;
+        if(!cheeseAdded){
+            this.cheeseAdded = true;
+            this.totalCheese+=80;
+            this.totalprice+=80;
+        }
+
 //        this.price+=80;
     }
 
