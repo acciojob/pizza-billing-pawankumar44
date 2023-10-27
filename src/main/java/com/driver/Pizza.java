@@ -58,10 +58,13 @@ public class Pizza {
 
     public void addExtraToppings(){
         // your code goes here
-        this.toppingAdded = true;
+        if(!this.toppingAdded){
+            this.toppingAdded = true;
 //        this.price+= this.isVeg ? 70 : 120;
-        this.totalToppings+= this.isVeg ? 70 : 120;
-        this.totalprice+= this.isVeg ? 70 : 120;
+            this.totalToppings = this.isVeg ? 70 : 120;
+            this.totalprice = this.isVeg ? 70 : 120;
+        }
+
     }
 
     public void addTakeaway(){
